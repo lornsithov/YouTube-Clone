@@ -1,0 +1,113 @@
+/*
+to search up for the code we use the keys
+Ctrl + f
+*/
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+  /* 
+  another example of css is:
+  inheritence only affacts on texts protery
+  it cant affact on sth like the border...
+
+  for example:
+  we can use 
+  *font-family: Roboto, Arial;
+  or *text-decoration: underline;
+  in a class (video-grid class) which is on the top of the every others classes
+  and the texts in every those classes will get *the font-family or *underline texts
+  type without even add in those classes. This is called >Inheritance<.
+
+  another example
+  if we use 
+  *border: 2px solid red;
+  this shit doesnt inherince to other classes tho since inherintance only works with texts and poops.
+
+  to sum up, Inheritance can help us to saving codes a lot. this means that we only write a property nn the top of 
+  classes and others will get it too. SAVE TIME SAVING CODES.
+  */
+}
+
+@media (max-width:750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail{
+  width: 100%; 
+}
+.video-time{
+  font-weight: 500;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  /* 
+  can also can use shortcut of padding
+
+  padding: 4px; 
+  it means that= padding top, padding-right, padding bottom, padding-left: 4px;
+
+  whe also can use this: padding: 2px 4px 6px 8px; 
+  it means that= padding top: 2px; padding-right:4px; padding bottom:6px; padding-left: 8px;
+
+  also margin can be used like this eg. margin: 2px 4px 6px 8px;
+  */
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+}
+.video-title{
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture{
+  width: 35px;
+  border-radius: 50px;
+}
+
+/* 
+to block some spaces there are three elements are called =
+1. block element
+2. inline-block element
+3. inline element
+*/
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-author,
+.video-stats{
+  font-size: 12px;
+  color: #606060;
+}
+.video-author{
+  margin-bottom: 6px;
+}
